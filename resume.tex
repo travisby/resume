@@ -1,0 +1,122 @@
+% SERVER ADMINISTRATION
+\documentclass[10pt,draft]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=.85,vmargin=15pt]{geometry}
+
+	% \setlength{\quotewidth}{length}
+	% \setlength{\separatorcolumnwidth}{length}
+	% \setlength{\maincolumnwidth}{1pt}
+	% \setlength{\doubleitemmaincolumnwidth}{length}
+	% \setlength{\listitemsymbolwidth}{length}
+	% \setlength{\listdoubleitemmaincolumnwidth}{length}
+\sethintscolumnlength{.120\textwidth}
+\recomputelengths
+
+\firstname{Travis}
+\familyname{Beatty}
+%\title{}
+\mobile{845 309 9908}
+\email{travisby@gmail.com}
+% \address{58 Sterling Drive}{12528 Highland, NY}
+
+%\phone{}
+
+
+\extrainfo{
+	http://github.com/travisby
+}
+\nopagenumbers
+
+% \quote{Non ducor, duco}
+
+
+\begin{document}
+
+\maketitle
+
+\vspace{-20pt}
+
+\section{Education}
+	\cventry{2011--Present}{Bachelors in Computer Science}{Marist College}{Poughkeepsie, NY}{}{
+		\textit{{Minor:}\hspace{3pt}{Information Technology}}
+		\newline
+		\textit{Major GPA:} {3.62} \textit{Overall GPA:} {3.55} \textit{Expected Graduation:} {May 2014}
+	}
+
+
+\section{Work Experience}
+	\cventry{2012--Present}{Full-Stack Web Development Intern}{Spectrum Graphics}{Poughkeepsie, NY}{}{
+%		Developed backend system, and interface for a CRM product.
+		Developed critical back-end processes including fuzzy-duplication resolving using both the SOUNDEX algorithm and Levenshtein Ratio, mass-email personalization and sending through a personally developed mail-merge program and the PowerMTA API, and both importing and exporting data with a highly-normalized database.
+		Performed daily system administration on an in-house Ubuntu server.  Such as maintaining backups, monitoring and performing security upgrades, and daemon installation and administration for dependencies of our SaaS.
+%		Configured an XMPIe Variable Data Print uProduce Cluster.
+		Performed Database Administrative duties on an Amazon RDS Instance.
+		Attended Oracle World's MySQL Connect in 2012.
+	}
+	\cventry{2012--Present}{Co-founder}{Tricktech Technology Solutions}{Poughkeepsie, NY}{}{
+		Co-developed a company that provided technical support to clients for their homes and small businesses.
+		Provided clients with malware removal, tune-ups, and printer support.
+%		Built made-to-order computers for client.
+	}
+
+	\cventry{2011--2012}{Residential Networking Technician}{Marist College Resnet}{Poughkeepsie, NY}{}{
+		Provided technical support for over 4,500 students and staff, both on site and by telephone (diagnosis and removal of virus/malware problems, network connectivity, and hardware and software problems).
+		Operated as the GNU/Linux Office Specialist.
+		Performed data recovery and secure deletion of user’s personal data.
+	}
+
+%	\cventry{Jun--Sep 2010}{Student Technician}{Highland High School}{Highland, NY}{}{
+%		Performed mass disk-cloning and propagation with Symantec Ghost and Clonezilla.
+%		Performed software and hardware upgrades  of lab computers.
+%		Managed and trained other student technicians.
+%	}
+	
+	\cventry{2008--2010}{Technician}{All Computer Repair}{Highland, NY}{}{
+%		Provided diagnosis and repair for software and hardware for clients, as well as malware removal.
+		Performed Windows and Debian GNU/Linux System Reinstallations.
+		Configured a LAMP Server, and a High-Performance Cluster for Internal Use.
+		Supervised and trained interns.
+	}
+\section{Projects and Open Source}
+	\cventry{November 2012}{pyrest}{}{http://pypi.python.org/pypi/pyrest/0.5.0 }{}{
+		Small python Middleware abstraction at the http request layer.  It is a  tool I designed to make it easier to build service-level API wrappers.  I used this to interface with the Github Issues API to create an automatic change log for an internal service at Spectrum.
+		\newline\textit{Technologies:} {Python, Git, distutils, pip, PyPi}
+	}
+%	\cventry{January 2013}{pyray}{}{http://github.com/travisby/pyray}{}{
+%		Python ADT implimentation of PHP's Array.  Also includes many of the PHP array functions in a separate module.  pyray allows PHP users a more comfortable "do-everything" array like PHP.
+%	}
+%		\cvline{Technologies}{python, git}
+	\cventry{August 2011}{pymafia}{}{http://github.com/travisby/PyMafiaWeb }{}{
+		Django automated Mafia Administration Website and API.  Automates the party game "Mafia," which is traditionally played in person, and has picked up popularity on Internet Forums.  pymafia acts as the Game Master, who is usually a player left out of the game.
+		\newline\textit{Technologies:} {Python, Django, Git, Heroku, PostgreSQL, SQLite, pip, django-tastypie, South, cron}
+	}
+
+	\cventry{November 2012}{Tricktech Website}{}{http://tricktech.herokuapp.com }{}{
+		Small Django Website for a small business.  Built originally for a school project, but now is standing as our business' official website.
+		\newline\textit{Technologies:} {Python, Django, Git, Heroku, PostgreSQL, SQLite, jQuery}
+	}
+
+	\cventry{November 2012}{Four-Year Planner for Class Registration}{}{http://github.com/travisby/fourYearPlanner }{}{
+		Marist College Computer Society Hackathon Project to act as a class registration suite.  The Django application would handle both the student-facing section, and the administrative section of class registration.
+		\newline\textit{Technologies:} {Python, Django, Git, PostgreSQL, SQLite}
+	}
+
+	\cventry{August 2012}{Fuzzy Duplicate Record Discovery Application}{Spectrum Graphics}{}{}{
+		Locates "fuzzy-matches" of database records above a certain likeliness threshold, taking over a dozen fields into consideration.
+		\newline\textit{Technologies:} {Python, MySQL, Levenshtein Ratio, SOUNDEX Algorithm, Metaphone Algorithm, RabbitMQ}
+	}
+
+	\cventry{January 2013}{Consolidation of Queries for a Memcache Implementation}{Spectrum Graphics}{}{}{
+		At Spectrum, we had previously written custom queries across our twelve applications.  For my implementation of memcache, we needed to move all of the queries into a single maintainable location.  I wrote an API that our products now interface with, rather than all accessing the database themselves.
+		\newline\textit{Technologies:} {MySQL, CodeIgniter, CodeIgniter Rest Server, Amazon Web Services, Memcache, Python, PHP}
+	}
+
+\section{Volunteer and Leadership Positions Held}
+	\cvlistitem{Elected Marist College Computer Society President since February 2012}
+	\cvlistitem{Elected Executive Webmaster for Marist Game Society since April 2012}
+	\cvlistitem{Server Administrator for a Dedicated Server for Marist IT Systems since 2011}
+	\cvlistitem{Elected Student Board of Education Representative on the Highland Board of Education in 2010}
+	\cvlistitem{Volunteered as a Fourth and Fifth Grade Catechist at St. James since 2009}
+	\cvlistitem{Volunteered as Highland High School Assistant Coach since 2011}
+\end{document}
