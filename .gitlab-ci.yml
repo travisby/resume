@@ -1,0 +1,8 @@
+image: blang/latex
+
+build:
+    script:
+        - latexmk -pdf resume.tex
+    artifacts:
+        paths:
+            - "*.pdf"
