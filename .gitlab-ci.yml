@@ -1,8 +1,16 @@
 image: blang/latex
 
-build:
+pdf:
+    stage: build
     script:
         - latexmk -pdf resume.tex
     artifacts:
         paths:
             - "*.pdf"
+tests:
+    dependencies:
+        - pdf
+    stage: test
+    script: 
+        - apt-get update -qq && apt-get install -y poppler-utils
+        - ./tests.sh
