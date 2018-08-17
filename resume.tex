@@ -46,7 +46,12 @@
 
 
 \section{Work Experience}
-	\cventry{2014--Present}{Systems Engineer}{FactSet Research Systems}{Norwalk, CT}{}{
+	\cventry{Aug 2017--Present}{Production Engineer}{Facebook}{New York, NY}{}{
+	}
+	\cventry{2014--2017}{Systems Engineer}{FactSet Research Systems}{Norwalk, CT}{}{
+		Developed and maintained our Platform as a Service (PaaS), and a suite of addons surrounding it such as our DB (Postgres) as a Service (DBaaS)
+		Developed our maintained server lifecycle system
+		Participated in on-call rotation for critical infrastructure
 	}
 	\cventry{May--Jun 2013}{Systems Engineering Intern}{FactSet Research Systems}{Norwalk, CT}{}{
 		Developed quota tracking and alerting application utilizing a well-developed NetApp, Isilon, and GPFS enterprise storage system
@@ -85,6 +90,16 @@
 		Supervised and trained interns.
 	}
 \section{Projects and Open Source}
+	\cventry{June 2014}{FactSet.io}{FactSet Research Systems}{}{}{
+		FactSet.io was a suite of microservices to scalable deploy stateless and stateful HTTP services at FactSet.  The components included its API, container lifecycle manager, individual container engines, an HTTP router, an SSH proxy, an automated health manager, web frontend, a CLI, and our compiler utilizing Heroku Buildpacks
+		\newline\textit{Technologies:} {Docker, MySQL, PostgreSQL, Zookeeper, Redis/Sentinel, Hipache, Logplex, React}
+		\newline\textit{Languages:} {Golang, NodeJS, Ruby}
+	}
+	\cventry{June 2014}{FactSet.io Addons}{FactSet Research Systems}{}{}{
+		FactSet.io included a huge suite of addons, including our DBaaS (multi-tenant and dedicated) which supported synchronous slaves to perform real time failover, rollback to point in time, and forking.
+		\newline\textit{Technologies:} {Wal-E, Docker, PostgreSQL, Kafka, Redis/Sentinel, React, OAuth, JWT}
+		\newline\textit{Languages:} {Golang, NodeJS, Ruby, Python, React}
+	}
 	\cventry{November 2012}{pyrest}{}{http://pypi.python.org/pypi/pyrest/0.5.0 }{}{
 		Small python Middleware abstraction at the http request layer.  It is a  tool I designed to make it easier to build service-level API wrappers.  I used this to interface with the Github Issues API to create an automatic change log for an internal service at Spectrum.
 		\newline\textit{Technologies:} {Python, Git, distutils, pip, PyPi}
